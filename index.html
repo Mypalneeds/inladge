@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inladge Marketing Agency - Professional digital marketing services, brand strategy, lead generation, and business growth solutions. Trusted by 25+ businesses to create clear marketing that converts.">
+    <meta name="keywords" content="marketing agency, digital marketing services, brand strategy, lead generation, website content writing, paid ads management, email marketing, business growth, marketing consultant, professional marketing services, brand messaging, content marketing">
+    <meta name="author" content="Inladge Marketing Agency">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Inladge - Professional Marketing Agency for Business Growth">
+    <meta property="og:description" content="We help businesses communicate clearly, attract the right customers, and grow with structure. Trusted by 25+ businesses.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inladge.com">
+    
+    <title>Inladge Marketing Agency | Professional Digital Marketing & Brand Strategy Services</title>
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #0066FF;
+            --dark-navy: #0A1628;
+            --burnt-orange: #E85D04;
+            --light-grey: #F8F9FA;
+            --medium-grey: #6C757D;
+            --white: #FFFFFF;
+            --gradient-blue: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
+            --gradient-dark: linear-gradient(135deg, #0A1628 0%, #1a2942 100%);
+            --gradient-orange: linear-gradient(135deg, #E85D04 0%, #DC2F02 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark-navy);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        
+        /* Navigation */
+        .navbar {
+            background: var(--white);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .navbar.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+        }
+        
+        .navbar-brand {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--dark-navy);
+            letter-spacing: -0.5px;
+        }
+        
+        .navbar-brand span {
+            color: var(--burnt-orange);
+        }
+        
+        .navbar-brand:hover span {
+            color: var(--primary-blue);
+        }
+        
+        .nav-link {
+            color: var(--dark-navy);
+            font-weight: 500;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: var(--burnt-orange);
+        }
+        
+        .nav-link.active {
+            color: var(--burnt-orange);
+            font-weight: 600;
+        }
+        
+        .btn-primary-custom {
+            background: var(--gradient-blue);
+            border: none;
+            color: var(--white);
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+        }
+        
+        .btn-primary-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 102, 255, 0.4);
+            color: var(--white);
+        }
+        
+        .btn-outline-custom {
+            border: 2px solid var(--primary-blue);
+            color: var(--primary-blue);
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+        
+        .btn-outline-custom:hover {
+            background: var(--primary-blue);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: var(--gradient-dark);
+            padding: 120px 0 100px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230066FF' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.4;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-section h1 {
+            font-size: 3.5rem;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero-section .lead {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+        
+        .trust-badge {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-top: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .trust-badge .stars {
+            color: #FFB800;
+        }
+        
+        .trust-badge span {
+            color: var(--white);
+            font-weight: 600;
+        }
+        
+        .hero-image {
+            position: relative;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            background: var(--white);
+            padding: 60px 0;
+            margin-top: -50px;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        }
+        
+        .stat-card i {
+            font-size: 2.5rem;
+            color: var(--burnt-orange);
+            margin-bottom: 1rem;
+        }
+        
+        .stat-card h3 {
+            font-size: 2.5rem;
+            color: var(--dark-navy);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-card p {
+            color: var(--medium-grey);
+            margin: 0;
+            font-weight: 500;
+        }
+        
+        /* Problem Section */
+        .problem-section {
+            padding: 100px 0;
+            background: var(--light-grey);
+        }
+        
+        .problem-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--burnt-orange);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .problem-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .problem-card i {
+            color: var(--burnt-orange);
+            font-size: 1.5rem;
+            margin-right: 1rem;
+        }
+        
+        .section-title {
+            font-size: 2.75rem;
+            margin-bottom: 1rem;
+            color: var(--dark-navy);
+        }
+        
+        .section-subtitle {
+            font-size: 1.15rem;
+            color: var(--medium-grey);
+            margin-bottom: 3rem;
+        }
+        
+        .highlight-text {
+            color: var(--primary-blue);
+            font-weight: 700;
+        }
+        
+        /* Services Section */
+        .services-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        
+        .service-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            height: 100%;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-blue);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-blue);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .service-icon i {
+            font-size: 2rem;
+            color: var(--white);
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-navy);
+        }
+        
+        .service-card p {
+            color: var(--medium-grey);
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-features li {
+            padding: 0.5rem 0;
+            color: var(--dark-navy);
+            display: flex;
+            align-items: center;
+        }
+        
+        .service-features li i {
+            color: var(--primary-blue);
+            margin-right: 0.75rem;
+            font-size: 0.9rem;
+        }
+        
+        /* Process Section */
+        .process-section {
+            padding: 100px 0;
+            background: var(--gradient-dark);
+            position: relative;
+        }
+        
+        .process-section h2,
+        .process-section .section-subtitle {
+            color: var(--white);
+        }
+        
+        .process-step {
+            text-align: center;
+            position: relative;
+            padding: 2rem;
+        }
+        
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--white);
+            box-shadow: 0 10px 30px rgba(0, 102, 255, 0.4);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .process-step h4 {
+            color: var(--white);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .process-step p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .process-connector {
+            position: absolute;
+            top: 35px;
+            left: 50%;
+            width: 100%;
+            height: 3px;
+            background: rgba(0, 102, 255, 0.3);
+            z-index: 1;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: var(--light-grey);
+        }
+        
+        .cta-box {
+            background: var(--gradient-blue);
+            border-radius: 30px;
+            padding: 4rem 3rem;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0, 102, 255, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 4s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        .cta-box h2 {
+            color: var(--white);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-box p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn-white-custom {
+            background: var(--white);
+            color: var(--primary-blue);
+            padding: 1rem 3rem;
+            border-radius: 50px;
+            font-weight: 700;
+            border: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-white-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            color: var(--primary-blue);
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        
+        .contact-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            height: 100%;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .contact-card:hover {
+            border-color: var(--burnt-orange);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(232, 93, 4, 0.2);
+        }
+        
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover .contact-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .contact-icon i {
+            font-size: 1.75rem;
+            color: white;
+        }
+        
+        .contact-card h4 {
+            margin-bottom: 1rem;
+            color: var(--dark-navy);
+        }
+        
+        .contact-card a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-card a:hover {
+            color: var(--burnt-orange);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--dark-navy);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 60px 0 30px;
+        }
+        
+        .footer h5 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--burnt-orange);
+        }
+        
+        .footer-links a:hover {
+            color: var(--burnt-orange);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 3rem;
+            padding-top: 2rem;
+            text-align: center;
+        }
+        
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.25rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .process-connector {
+                display: none;
+            }
+            
+            .hero-section {
+                padding: 80px 0 60px;
+            }
+            
+            .stats-section,
+            .services-section,
+            .process-section,
+            .cta-section,
+            .contact-section,
+            .problem-section {
+                padding: 60px 0;
+            }
+        }
+        
+        /* Scroll to Top Button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-orange);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 5px 20px rgba(232, 93, 4, 0.4);
+        }
+        
+        .scroll-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .scroll-top:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Image Styles */
+        .feature-image {
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            transition: all 0.4s ease;
+            width: 100%;
+            height: auto;
+        }
+        
+        .feature-image:hover {
+            transform: scale(1.02);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.2);
+        }
+        
+        .image-badge {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background: var(--gradient-orange);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 15px;
+            font-weight: 700;
+            box-shadow: 0 10px 30px rgba(232, 93, 4, 0.4);
+        }
+        
+        /* Testimonials */
+        .testimonial-section {
+            padding: 100px 0;
+            background: var(--gradient-dark);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2.5rem;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+        }
+        
+        .testimonial-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: var(--gradient-orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .testimonial-text {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            color: white;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        
+        .testimonial-role {
+            color: var(--burnt-orange);
+            font-size: 0.9rem;
+        }
+        
+        .quote-icon {
+            color: var(--burnt-orange);
+            font-size: 3rem;
+            opacity: 0.3;
+            margin-bottom: 1rem;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            padding: 100px 0;
+            background: white;
+        }
+        
+        .accordion-button {
+            background: var(--light-grey);
+            color: var(--dark-navy);
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 1.5rem;
+            border: none;
+            box-shadow: none;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background: var(--gradient-orange);
+            color: white;
+            box-shadow: 0 5px 20px rgba(232, 93, 4, 0.3);
+        }
+        
+        .accordion-button:focus {
+            box-shadow: none;
+            border: none;
+        }
+        
+        .accordion-button::after {
+            filter: brightness(0);
+        }
+        
+        .accordion-button:not(.collapsed)::after {
+            filter: brightness(10);
+        }
+        
+        .accordion-item {
+            border: none;
+            margin-bottom: 1rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .accordion-body {
+            padding: 1.5rem;
+            background: white;
+            color: var(--medium-grey);
+            line-height: 1.8;
+        }
+        
+        /* Orange Accent Elements */
+        .orange-badge {
+            background: var(--gradient-orange);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(232, 93, 4, 0.3);
+        }
+        
+        .orange-divider {
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-orange);
+            margin: 1.5rem auto;
+            border-radius: 2px;
+        }
+        
+        .btn-orange-custom {
+            background: var(--gradient-orange);
+            border: none;
+            color: var(--white);
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(232, 93, 4, 0.4);
+        }
+        
+        .btn-orange-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(232, 93, 4, 0.5);
+            color: var(--white);
+        }
+        
+        /* Portfolio/Gallery Section */
+        .portfolio-section {
+            padding: 100px 0;
+            background: var(--light-grey);
+        }
+        
+        .portfolio-item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            height: 300px;
+            background: var(--medium-grey);
+            margin-bottom: 30px;
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-orange);
+            opacity: 0;
+            transition: all 0.4s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 0.95;
+        }
+        
+        .portfolio-overlay h4 {
+            color: white;
+            margin-bottom: 0.5rem;
+            transform: translateY(20px);
+            transition: all 0.4s ease;
+        }
+        
+        .portfolio-overlay p {
+            color: white;
+            transform: translateY(20px);
+            transition: all 0.4s ease 0.1s;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay h4,
+        .portfolio-item:hover .portfolio-overlay p {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">In<span>ladge</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#process">Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary-custom" href="#cta">Book a Call</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center hero-content">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <h1>We Help Businesses Look Professional and Get More Customers</h1>
+                    <p class="lead">We are a marketing agency that helps businesses communicate clearly, attract the right customers, and grow with structure - not guesswork.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#cta" class="btn btn-primary-custom btn-lg">
+                            <i class="fas fa-calendar-check me-2"></i>Book a Discovery Call
+                        </a>
+                        <a href="#services" class="btn btn-outline-custom btn-lg" style="background: rgba(255,255,255,0.1); color: white; border-color: rgba(255,255,255,0.3);">
+                            <i class="fas fa-arrow-down me-2"></i>Explore Services
+                        </a>
+                    </div>
+                    <div class="trust-badge">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span>Trusted by 25+ Businesses</span>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left">
+                    <div class="hero-image text-center position-relative">
+                        <!-- Placeholder for hero illustration -->
+                        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%;">
+                            <!-- Background circle -->
+                            <circle cx="250" cy="250" r="200" fill="rgba(0, 102, 255, 0.1)"/>
+                            
+                            <!-- Rocket icon -->
+                            <g transform="translate(200, 150)">
+                                <path d="M50,0 L70,20 L70,80 L50,100 L30,80 L30,20 Z" fill="#E85D04"/>
+                                <circle cx="50" cy="40" r="8" fill="white"/>
+                                <path d="M35,100 L25,120 L35,115 Z" fill="#0066FF"/>
+                                <path d="M65,100 L75,120 L65,115 Z" fill="#0066FF"/>
+                                <path d="M40,100 L35,130 L40,120 Z" fill="#E85D04" opacity="0.7"/>
+                                <path d="M60,100 L65,130 L60,120 Z" fill="#E85D04" opacity="0.7"/>
+                            </g>
+                            
+                            <!-- Decorative elements -->
+                            <circle cx="150" cy="150" r="15" fill="#E85D04" opacity="0.6"/>
+                            <circle cx="350" cy="200" r="20" fill="#0066FF" opacity="0.4"/>
+                            <circle cx="120" cy="300" r="10" fill="#E85D04" opacity="0.5"/>
+                            <circle cx="380" cy="320" r="12" fill="#0066FF" opacity="0.3"/>
+                            
+                            <!-- Stars -->
+                            <path d="M100,100 L102,106 L108,106 L103,110 L105,116 L100,112 L95,116 L97,110 L92,106 L98,106 Z" fill="#FFB800"/>
+                            <path d="M360,140 L362,146 L368,146 L363,150 L365,156 L360,152 L355,156 L357,150 L352,146 L358,146 Z" fill="#FFB800"/>
+                            <path d="M140,380 L142,386 L148,386 L143,390 L145,396 L140,392 L135,396 L137,390 L132,386 L138,386 Z" fill="#FFB800"/>
+                        </svg>
+                        <div class="image-badge">
+                            <i class="fas fa-trophy me-2"></i>Trusted Partner
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3>25+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>150%</h3>
+                        <p>Average Growth Rate</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <i class="fas fa-award"></i>
+                        <h3>98%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h2 class="section-title">Is Your Marketing <span class="highlight-text">Holding You Back?</span></h2>
+                    <p class="section-subtitle">If your marketing feels confusing, inconsistent, or ineffective, we help you fix that.</p>
+                    
+                    <div class="problem-card">
+                        <i class="fas fa-times-circle"></i>
+                        <span><strong>Unclear messaging</strong> that confuses potential customers</span>
+                    </div>
+                    <div class="problem-card">
+                        <i class="fas fa-times-circle"></i>
+                        <span><strong>Inconsistent branding</strong> across different platforms</span>
+                    </div>
+                    <div class="problem-card">
+                        <i class="fas fa-times-circle"></i>
+                        <span><strong>No clear strategy</strong> for attracting leads</span>
+                    </div>
+                    <div class="problem-card">
+                        <i class="fas fa-times-circle"></i>
+                        <span><strong>Wasting money</strong> on marketing that doesn't work</span>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="position-relative mb-4">
+                        <!-- Business growth illustration -->
+                        <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 500px;">
+                            <!-- Background -->
+                            <rect width="500" height="400" fill="#F8F9FA" rx="20"/>
+                            
+                            <!-- Graph background -->
+                            <rect x="50" y="50" width="400" height="300" fill="white" rx="10"/>
+                            
+                            <!-- Grid lines -->
+                            <line x1="50" y1="100" x2="450" y2="100" stroke="#E0E0E0" stroke-width="1"/>
+                            <line x1="50" y1="150" x2="450" y2="150" stroke="#E0E0E0" stroke-width="1"/>
+                            <line x1="50" y1="200" x2="450" y2="200" stroke="#E0E0E0" stroke-width="1"/>
+                            <line x1="50" y1="250" x2="450" y2="250" stroke="#E0E0E0" stroke-width="1"/>
+                            <line x1="50" y1="300" x2="450" y2="300" stroke="#E0E0E0" stroke-width="1"/>
+                            
+                            <!-- Growth line -->
+                            <polyline points="80,280 150,240 220,200 290,140 360,80 430,50" 
+                                      fill="none" stroke="#E85D04" stroke-width="4" stroke-linecap="round"/>
+                            
+                            <!-- Data points -->
+                            <circle cx="80" cy="280" r="6" fill="#E85D04"/>
+                            <circle cx="150" cy="240" r="6" fill="#E85D04"/>
+                            <circle cx="220" cy="200" r="6" fill="#E85D04"/>
+                            <circle cx="290" cy="140" r="6" fill="#E85D04"/>
+                            <circle cx="360" cy="80" r="6" fill="#E85D04"/>
+                            <circle cx="430" cy="50" r="8" fill="#0066FF"/>
+                            
+                            <!-- Success badge -->
+                            <rect x="340" y="15" width="130" height="40" fill="#0066FF" rx="20"/>
+                            <text x="405" y="40" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Success!</text>
+                            
+                            <!-- Icons -->
+                            <circle cx="100" cy="370" r="20" fill="#0066FF" opacity="0.2"/>
+                            <circle cx="250" cy="370" r="20" fill="#E85D04" opacity="0.2"/>
+                            <circle cx="400" cy="370" r="20" fill="#0066FF" opacity="0.2"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="p-4 bg-white rounded-4 shadow-lg" style="border: 3px solid var(--burnt-orange);">
+                        <h3 class="mb-4"><i class="fas fa-bullseye me-2" style="color: var(--burnt-orange);"></i>We Work With Business Owners Who:</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="fas fa-check-circle me-3 mt-1" style="font-size: 1.25rem; color: var(--burnt-orange);"></i>
+                                <span><strong>Make decisions</strong> and take action on growth</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="fas fa-check-circle me-3 mt-1" style="font-size: 1.25rem; color: var(--burnt-orange);"></i>
+                                <span><strong>Want clear marketing direction</strong> without the fluff</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="fas fa-check-circle me-3 mt-1" style="font-size: 1.25rem; color: var(--burnt-orange);"></i>
+                                <span><strong>Are ready to invest</strong> in sustainable business growth</span>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="fas fa-check-circle me-3 mt-1" style="font-size: 1.25rem; color: var(--burnt-orange);"></i>
+                                <span><strong>Value results</strong> over quick tricks and shortcuts</span>
+                            </li>
+                        </ul>
+                        <div class="alert mt-4" role="alert" style="background: linear-gradient(135deg, #E85D04 0%, #DC2F02 100%); border: none; color: white;">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Not a good fit?</strong> This may not work if you're looking for cheap services or quick fixes.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Professional Marketing Services That <span class="highlight-text">Drive Growth</span></h2>
+                <p class="section-subtitle">Clear, structured marketing solutions designed for serious business owners</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-pen-nib"></i>
+                        </div>
+                        <h3>Brand & Website Content</h3>
+                        <p>We help you clearly explain what your business does so customers understand you, trust you, and take action.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Brand messaging strategy</li>
+                            <li><i class="fas fa-check"></i> Website content writing</li>
+                            <li><i class="fas fa-check"></i> Company profiles & pitch decks</li>
+                            <li><i class="fas fa-check"></i> Brand positioning</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <strong style="color: var(--burnt-orange);">Result:</strong> Your business looks credible, clear, and ready to sell.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Lead Generation & Ads</h3>
+                        <p>We set up and manage digital marketing systems that bring people to your business and turn them into leads or customers.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Paid ads strategy & management</li>
+                            <li><i class="fas fa-check"></i> Email marketing campaigns</li>
+                            <li><i class="fas fa-check"></i> Lead tracking & reporting</li>
+                            <li><i class="fas fa-check"></i> Performance optimization</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <strong style="color: var(--burnt-orange);">Result:</strong> More people discover your business and take action.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Ongoing Marketing Support</h3>
+                        <p>We provide ongoing marketing support for businesses that want guidance without hiring full-time staff.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Monthly marketing planning</li>
+                            <li><i class="fas fa-check"></i> Campaign ideas & strategy</li>
+                            <li><i class="fas fa-check"></i> Marketing oversight</li>
+                            <li><i class="fas fa-check"></i> Performance reviews</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <strong style="color: var(--burnt-orange);">Result:</strong> Better decisions, better marketing, less stress.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Our Simple <span class="highlight-text">4-Step Process</span></h2>
+                <p class="section-subtitle">Clear, structured approach to delivering real results</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Understand</h4>
+                        <p>We take time to understand your business, goals, and current challenges</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Recommend</h4>
+                        <p>We recommend what will actually help based on your specific situation</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Agree on Plan</h4>
+                        <p>We create a clear plan with timelines and expectations</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h4>Deliver Results</h4>
+                        <p>We execute the plan and review results together</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <div class="p-4 rounded-4" style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                    <h5 style="color: white; margin-bottom: 1rem;">How We Work With Clients</h5>
+                    <div class="row g-3">
+                        <div class="col-md-3 col-6">
+                            <i class="fas fa-clipboard-check" style="font-size: 2rem; color: var(--primary-blue); margin-bottom: 0.5rem;"></i>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0;">Clear Scope & Timelines</p>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <i class="fas fa-comments" style="font-size: 2rem; color: var(--primary-blue); margin-bottom: 0.5rem;"></i>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0;">Structured Communication</p>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <i class="fas fa-handshake" style="font-size: 2rem; color: var(--primary-blue); margin-bottom: 0.5rem;"></i>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0;">Honest Recommendations</p>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <i class="fas fa-shield-alt" style="font-size: 2rem; color: var(--primary-blue); margin-bottom: 0.5rem;"></i>
+                            <p style="color: rgba(255,255,255,0.9); margin: 0;">Respect for Boundaries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="orange-badge mb-3">Our Work</span>
+                <h2 class="section-title mt-3">Results That <span class="highlight-text">Speak for Themselves</span></h2>
+                <div class="orange-divider"></div>
+                <p class="section-subtitle">See how we've helped businesses transform their marketing</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-item">
+                        <!-- Marketing Strategy Illustration -->
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                            <rect width="400" height="300" fill="#0066FF"/>
+                            <circle cx="200" cy="150" r="80" fill="white" opacity="0.2"/>
+                            <circle cx="200" cy="150" r="60" fill="white" opacity="0.3"/>
+                            <circle cx="200" cy="150" r="40" fill="white" opacity="0.4"/>
+                            <path d="M200,110 L220,170 L160,140 L240,140 L180,170 Z" fill="white"/>
+                        </svg>
+                        <div class="portfolio-overlay">
+                            <h4>Brand Strategy</h4>
+                            <p>Complete brand overhaul for tech startup</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-item">
+                        <!-- Lead Generation Illustration -->
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                            <rect width="400" height="300" fill="#E85D04"/>
+                            <rect x="50" y="50" width="300" height="200" fill="white" opacity="0.2" rx="10"/>
+                            <rect x="80" y="80" width="240" height="20" fill="white" opacity="0.4" rx="5"/>
+                            <rect x="80" y="120" width="180" height="20" fill="white" opacity="0.4" rx="5"/>
+                            <rect x="80" y="160" width="200" height="20" fill="white" opacity="0.4" rx="5"/>
+                            <circle cx="320" cy="230" r="30" fill="white"/>
+                            <path d="M320,215 L320,245 M305,230 L335,230" stroke="#E85D04" stroke-width="4"/>
+                        </svg>
+                        <div class="portfolio-overlay">
+                            <h4>Lead Generation</h4>
+                            <p>300% increase in qualified leads</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-item">
+                        <!-- Content Marketing Illustration -->
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+                            <rect width="400" height="300" fill="#0A1628"/>
+                            <rect x="80" y="60" width="240" height="180" fill="white" opacity="0.2" rx="10"/>
+                            <circle cx="150" cy="120" r="30" fill="white" opacity="0.4"/>
+                            <rect x="200" y="100" width="90" height="15" fill="white" opacity="0.4" rx="5"/>
+                            <rect x="200" y="130" width="90" height="15" fill="white" opacity="0.4" rx="5"/>
+                            <rect x="100" y="170" width="200" height="10" fill="white" opacity="0.3" rx="3"/>
+                            <rect x="100" y="190" width="180" height="10" fill="white" opacity="0.3" rx="3"/>
+                            <rect x="100" y="210" width="190" height="10" fill="white" opacity="0.3" rx="3"/>
+                        </svg>
+                        <div class="portfolio-overlay">
+                            <h4>Content Marketing</h4>
+                            <p>Award-winning campaign execution</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title" style="color: white;">What Our <span style="color: var(--burnt-orange);">Clients Say</span></h2>
+                <div class="orange-divider"></div>
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Real feedback from business owners we've helped grow</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Inladge completely transformed our marketing approach. We went from confused messaging to crystal clear communication. Our conversion rate doubled in 3 months!"</p>
+                        <div class="testimonial-avatar">AO</div>
+                        <h5 class="testimonial-author">Adewale Ogunlade</h5>
+                        <p class="testimonial-role">CEO, TechVenture Ltd</p>
+                        <div class="stars" style="color: #FFB800;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Finally, a marketing agency that actually delivers results! No fluff, just clear strategy and execution. Our lead generation increased by 250%."</p>
+                        <div class="testimonial-avatar">CN</div>
+                        <h5 class="testimonial-author">Chioma Nwosu</h5>
+                        <p class="testimonial-role">Founder, Elite Realty</p>
+                        <div class="stars" style="color: #FFB800;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="testimonial-text">"Professional, structured, and results-driven. Inladge helped us build a marketing system that actually works. Best investment we've made this year."</p>
+                        <div class="testimonial-avatar">BI</div>
+                        <h5 class="testimonial-author">Babatunde Ibrahim</h5>
+                        <p class="testimonial-role">MD, ProServe Solutions</p>
+                        <div class="stars" style="color: #FFB800;">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="orange-badge mb-3">FAQ</span>
+                <h2 class="section-title mt-3">Frequently Asked <span class="highlight-text">Questions</span></h2>
+                <div class="orange-divider"></div>
+                <p class="section-subtitle">Everything you need to know about working with us</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    <i class="fas fa-question-circle me-3" style="color: var(--burnt-orange);"></i>
+                                    What makes Inladge different from other marketing agencies?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We focus on clarity and results, not fluff. We only recommend what will actually help your business grow. We work with serious business owners who are ready to invest in sustainable growth, and we provide structured, measurable marketing solutions with clear timelines and expectations.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    <i class="fas fa-question-circle me-3" style="color: var(--burnt-orange);"></i>
+                                    How long does it take to see results?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Timeline varies by service. Brand strategy and website content typically takes 2-4 weeks. Lead generation campaigns show initial results within 30-60 days, with optimization ongoing. Ongoing support is month-to-month with continuous improvement. We provide clear timelines during our discovery call.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    <i class="fas fa-question-circle me-3" style="color: var(--burnt-orange);"></i>
+                                    What is your pricing structure?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our pricing is project-based and depends on your specific needs. We provide transparent quotes after understanding your business and goals during the discovery call. We don't believe in one-size-fits-all packages. Investment ranges from mid to premium tier, reflecting the quality and expertise we bring.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    <i class="fas fa-question-circle me-3" style="color: var(--burnt-orange);"></i>
+                                    Do you work with businesses in my industry?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We work with B2B and B2C businesses across various industries including technology, real estate, professional services, e-commerce, and more. Our marketing principles work across industries. What matters most is that you're a decision-maker ready to invest in growth.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="500">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    <i class="fas fa-question-circle me-3" style="color: var(--burnt-orange);"></i>
+                                    What happens during the discovery call?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    The discovery call is a 30-45 minute conversation where we learn about your business, current challenges, and goals. We'll ask questions, provide initial insights, and determine if we're a good fit. There's no obligation, and we'll be honest about whether we can help you or not.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item" data-aos="fade-up" data-aos-delay="600">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    <i class="fas fa-question-circle me-3" style="color: var(--burnt-orange);"></i>
+                                    Can you guarantee results?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We don't make unrealistic promises, but we do guarantee our commitment to your success. We use proven strategies, maintain transparent communication, and work collaboratively with you. Our track record speaks for itself - most clients see significant improvements within the first 90 days. We focus on measurable outcomes and continuous optimization.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-5" data-aos="fade-up">
+                        <p class="text-muted mb-3">Still have questions?</p>
+                        <a href="#contact" class="btn btn-orange-custom btn-lg">
+                            <i class="fas fa-comments me-2"></i>Let's Talk
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="container">
+            <div class="cta-box" data-aos="zoom-in" style="background: var(--gradient-orange);">
+                <div class="row align-items-center">
+                    <div class="col-lg-8 text-lg-start text-center mb-4 mb-lg-0">
+                        <h2>Ready to Improve Your Marketing and Business Growth?</h2>
+                        <p>Book a discovery call and let's discuss how we can help your business grow</p>
+                        <div class="d-flex gap-3 flex-wrap justify-content-lg-start justify-content-center">
+                            <a href="#contact" class="btn btn-white-custom">
+                                <i class="fas fa-calendar-check me-2"></i>Book Your Free Discovery Call
+                            </a>
+                            <a href="tel:08029073497" class="btn btn-outline-custom" style="border-color: white; color: white;">
+                                <i class="fas fa-phone me-2"></i>Call Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block text-center">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="max-width: 180px;">
+                            <circle cx="100" cy="100" r="90" fill="white" opacity="0.2"/>
+                            <circle cx="100" cy="100" r="70" fill="white" opacity="0.3"/>
+                            <path d="M100,40 L130,90 L100,80 L70,90 Z" fill="white"/>
+                            <circle cx="100" cy="100" r="15" fill="white"/>
+                            <path d="M85,130 L100,160 L115,130" stroke="white" stroke-width="4" fill="none"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Get in <span class="highlight-text">Touch</span></h2>
+                <p class="section-subtitle">Multiple ways to connect with our marketing experts</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Call Us</h4>
+                        <a href="tel:08029073497">08029073497</a>
+                        <p class="mt-2 text-muted">Mon - Fri, 9am - 6pm</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>WhatsApp</h4>
+                        <a href="https://wa.me/2348029073497" target="_blank">+234 802 907 3497</a>
+                        <p class="mt-2 text-muted">Quick response guaranteed</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Us</h4>
+                        <a href="mailto:inladgecompany@gmail.com">inladgecompany@gmail.com</a>
+                        <p class="mt-2 text-muted">24-hour response time</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <div class="alert alert-info d-inline-block" style="max-width: 600px;">
+                    <i class="fas fa-info-circle me-2"></i>
+                    <strong>Before booking:</strong> We work with committed business owners who are ready to invest in growth. We recommend only what fits your business.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5>About Inladge</h5>
+                    <p>We are a marketing agency that helps businesses communicate clearly, attract the right customers, and grow with structure - not guesswork.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#services">Brand Strategy</a></li>
+                        <li><a href="#services">Website Content</a></li>
+                        <li><a href="#services">Lead Generation</a></li>
+                        <li><a href="#services">Marketing Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Info</h5>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone me-2"></i> 08029073497</li>
+                        <li><i class="fas fa-envelope me-2"></i> inladgecompany@gmail.com</li>
+                        <li><i class="fab fa-whatsapp me-2"></i> WhatsApp Support</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Inladge Marketing Agency. All rights reserved. | Built for serious business owners who value results.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll to top button
+        const scrollTop = document.getElementById('scrollTop');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                scrollTop.classList.add('active');
+            } else {
+                scrollTop.classList.remove('active');
+            }
+        });
+
+        scrollTop.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarCollapse.classList.remove('show');
+                    }
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('[data-aos]').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+
+        // Add hover effect to service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.borderColor = 'var(--primary-blue)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.borderColor = 'rgba(0, 0, 0, 0.05)';
+            });
+        });
+    </script>
+</body>
+</html>
