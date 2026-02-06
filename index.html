@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="description" content="Inladge Marketing Agency - Professional digital marketing services, brand strategy, lead generation, and business growth solutions. Trusted by 25+ businesses to create clear marketing that converts.">
     <meta name="keywords" content="marketing agency, digital marketing services, brand strategy, lead generation, website content writing, paid ads management, email marketing, business growth, marketing consultant, professional marketing services, brand messaging, content marketing">
     <meta name="author" content="Inladge Marketing Agency">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0066FF">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta property="og:title" content="Inladge - Professional Marketing Agency for Business Growth">
     <meta property="og:description" content="We help businesses communicate clearly, attract the right customers, and grow with structure. Trusted by 25+ businesses.">
     <meta property="og:type" content="website">
@@ -45,6 +48,7 @@
             color: var(--dark-navy);
             line-height: 1.7;
             overflow-x: hidden;
+            padding-top: 76px;
         }
         
         h1, h2, h3, h4, h5, h6 {
@@ -59,6 +63,11 @@
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
             padding: 1rem 0;
             transition: all 0.3s ease;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1050;
         }
         
         .navbar.scrolled {
@@ -80,6 +89,19 @@
         
         .navbar-brand:hover span {
             color: var(--primary-blue);
+        }
+        
+        .navbar-toggler {
+            border: 2px solid var(--burnt-orange);
+            padding: 0.5rem 0.75rem;
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: 0 0 0 0.2rem rgba(232, 93, 4, 0.25);
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23E85D04' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
         
         .nav-link {
@@ -107,6 +129,10 @@
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+            min-height: 48px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .btn-primary-custom:hover {
@@ -123,6 +149,10 @@
             font-weight: 600;
             transition: all 0.3s ease;
             background: transparent;
+            min-height: 48px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .btn-outline-custom:hover {
@@ -134,7 +164,7 @@
         /* Hero Section */
         .hero-section {
             background: var(--gradient-dark);
-            padding: 120px 0 100px;
+            padding: 80px 0 100px;
             position: relative;
             overflow: hidden;
         }
@@ -485,6 +515,10 @@
             font-size: 1.1rem;
             transition: all 0.3s ease;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            min-height: 48px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .btn-white-custom:hover {
@@ -616,30 +650,245 @@
         }
         
         /* Responsive */
+        @media (max-width: 991px) {
+            .navbar-collapse {
+                background: white;
+                padding: 1.5rem;
+                border-radius: 15px;
+                margin-top: 1rem;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            }
+            
+            .nav-link {
+                margin: 0.5rem 0;
+                padding: 0.5rem 0;
+            }
+            
+            .navbar .btn-primary-custom {
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+        
         @media (max-width: 768px) {
+            .hero-section {
+                padding: 60px 0 60px;
+            }
+            
             .hero-section h1 {
-                font-size: 2.25rem;
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+            
+            .hero-section .lead {
+                font-size: 1.1rem;
             }
             
             .section-title {
-                font-size: 2rem;
+                font-size: 1.75rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1rem;
             }
             
             .process-connector {
                 display: none;
             }
             
-            .hero-section {
-                padding: 80px 0 60px;
+            .stats-section {
+                padding: 40px 0;
+                margin-top: -30px;
             }
             
-            .stats-section,
             .services-section,
             .process-section,
             .cta-section,
             .contact-section,
-            .problem-section {
+            .problem-section,
+            .portfolio-section,
+            .testimonial-section,
+            .faq-section {
                 padding: 60px 0;
+            }
+            
+            .stat-card {
+                margin-bottom: 1rem;
+            }
+            
+            .service-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .cta-box {
+                padding: 3rem 2rem;
+            }
+            
+            .cta-box h2 {
+                font-size: 1.75rem;
+            }
+            
+            .trust-badge {
+                padding: 0.75rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .btn-primary-custom,
+            .btn-outline-custom,
+            .btn-orange-custom,
+            .btn-white-custom {
+                width: 100%;
+                margin-bottom: 0.75rem;
+                text-align: center;
+            }
+            
+            .d-flex.gap-3 {
+                gap: 0 !important;
+            }
+            
+            .hero-section .d-flex {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .cta-section .d-flex {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .problem-card {
+                padding: 1.5rem;
+                margin-bottom: 1rem;
+                font-size: 0.95rem;
+            }
+            
+            .problem-card i {
+                font-size: 1.25rem;
+            }
+            
+            .portfolio-item {
+                height: 250px;
+            }
+            
+            .testimonial-card {
+                margin-bottom: 1.5rem;
+            }
+            
+            .orange-badge {
+                font-size: 0.9rem;
+                padding: 0.4rem 1.2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-section {
+                padding: 50px 0 50px;
+            }
+            
+            .hero-section h1 {
+                font-size: 1.75rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+            
+            .stat-card h3 {
+                font-size: 2rem;
+            }
+            
+            .service-card h3 {
+                font-size: 1.25rem;
+            }
+            
+            .step-number {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            
+            .process-step h4 {
+                font-size: 1.1rem;
+            }
+            
+            .cta-box h2 {
+                font-size: 1.5rem;
+            }
+            
+            .cta-box p {
+                font-size: 1rem;
+            }
+            
+            .contact-card {
+                padding: 2rem 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .faq-section .alert {
+                text-align: center;
+                font-size: 0.9rem;
+            }
+            
+            .contact-section .alert {
+                padding: 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .testimonial-avatar {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            
+            .testimonial-text {
+                font-size: 1rem;
+            }
+            
+            .accordion-button {
+                font-size: 1rem;
+                padding: 1rem;
+            }
+            
+            .portfolio-item {
+                height: 200px;
+                margin-bottom: 20px;
+            }
+            
+            .footer {
+                padding: 40px 0 20px;
+            }
+            
+            .footer .col-lg-4,
+            .footer .col-lg-2,
+            .footer .col-lg-3,
+            .footer .col-md-6 {
+                margin-bottom: 2rem;
+            }
+            
+            .social-links {
+                text-align: center;
+                margin-top: 1rem;
+            }
+        }
+        
+        /* Additional mobile optimizations */
+        @media (max-width: 480px) {
+            .btn-white-custom,
+            .btn-orange-custom {
+                padding: 0.875rem 2rem;
+                font-size: 1rem;
+            }
+            
+            .service-features {
+                font-size: 0.9rem;
+            }
+            
+            .stat-card {
+                padding: 1.5rem;
             }
         }
         
@@ -840,6 +1089,10 @@
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(232, 93, 4, 0.4);
+            min-height: 48px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .btn-orange-custom:hover {
@@ -1564,7 +1817,7 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <h4>Email Us</h4>
-                        <a href="mailto:inladgecompany@gmail.com">inladgecompany@gmail.com</a>
+                        <a href="/cdn-cgi/l/email-protection#c8a1a6a4a9acafadaba7a5b8a9a6b188afa5a9a1a4e6aba7a5"><span class="__cf_email__" data-cfemail="3f5651535e5b585a5c50524f5e51467f58525e5653115c5052">[email&#160;protected]</span></a>
                         <p class="mt-2 text-muted">24-hour response time</p>
                     </div>
                 </div>
@@ -1619,7 +1872,7 @@
                     <h5>Contact Info</h5>
                     <ul class="footer-links">
                         <li><i class="fas fa-phone me-2"></i> 08029073497</li>
-                        <li><i class="fas fa-envelope me-2"></i> inladgecompany@gmail.com</li>
+                        <li><i class="fas fa-envelope me-2"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="640d0a0805000301070b0914050a1d240309050d084a070b09">[email&#160;protected]</a></li>
                         <li><i class="fab fa-whatsapp me-2"></i> WhatsApp Support</li>
                     </ul>
                 </div>
@@ -1637,7 +1890,7 @@
     </div>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
         // Navbar scroll effect
@@ -1673,7 +1926,7 @@
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    const offsetTop = target.offsetTop - 80;
+                    const offsetTop = target.offsetTop - 90; // Account for fixed navbar
                     window.scrollTo({
                         top: offsetTop,
                         behavior: 'smooth'
@@ -1708,14 +1961,4 @@
         });
 
         // Add hover effect to service cards
-        document.querySelectorAll('.service-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.borderColor = 'var(--primary-blue)';
-            });
-            card.addEventListener('mouseleave', function() {
-                this.style.borderColor = 'rgba(0, 0, 0, 0.05)';
-            });
-        });
-    </script>
-</body>
-</html>
+        docu
