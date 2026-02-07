@@ -158,6 +158,7 @@
         .hero-section h1 {
             font-size: 3.5rem;
             color: var(--white);
+            margin-top:1.9rem;
             margin-bottom: 1.5rem;
             line-height: 1.2;
         }
@@ -170,7 +171,7 @@
         }
         
         .trust-badge {
-            background: rgba(255, 255, 255, 0.1);
+            background: #FFB800;
             backdrop-filter: blur(10px);
             padding: 1rem 2rem;
             border-radius: 50px;
@@ -179,14 +180,15 @@
             gap: 0.75rem;
             margin-top: 2rem;
             border: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 20px;
         }
         
         .trust-badge .stars {
-            color: #FFB800;
+            color: #020201;
         }
         
         .trust-badge span {
-            color: var(--white);
+            color: black;
             font-weight: 600;
         }
         
@@ -900,67 +902,130 @@
         .portfolio-item:hover .portfolio-overlay p {
             transform: translateY(0);
         }
-        
-        /* WhatsApp Floating Widget */
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            animation: pulse-whatsapp 2s infinite;
-        }
 
-        .whatsapp-float:hover {
-            background-color: #128C7E;
-            transform: scale(1.1);
-            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
-            color: #FFF;
-        }
+/* ============================================
+   MOBILE RESPONSIVE STYLES
+   ============================================ */
 
-        @keyframes pulse-whatsapp {
-            0% {
-                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-            }
-            50% {
-                box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7);
-            }
-            100% {
-                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-            }
-        }
+html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+}
 
-        .whatsapp-float i {
-            margin: 0;
-            line-height: 60px;
-        }
+/* Tablets */
+@media (max-width: 992px) {
+    .hero-section h1 { font-size: 2.5rem; line-height: 1.3; }
+    .section-title { font-size: 2.25rem; }
+}
 
-        /* Responsive WhatsApp button */
-        @media screen and (max-width: 767px) {
-            .whatsapp-float {
-                width: 50px;
-                height: 50px;
-                bottom: 20px;
-                right: 20px;
-                font-size: 25px;
-            }
-            
-            .whatsapp-float i {
-                line-height: 50px;
-            }
-        }
+/* Landscape phones & small tablets */
+@media (max-width: 768px) {
+    .container { padding-left: 20px; padding-right: 20px; max-width: 100%; }
+    .navbar { padding: 0.75rem 0; }
+    .navbar-brand { font-size: 1.5rem; }
+    .navbar-collapse { background: var(--white); padding: 1.5rem; border-radius: 10px; margin-top: 1rem; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+    .nav-link { padding: 0.75rem 0; margin: 0; text-align: center; }
+    .navbar .btn-primary-custom { margin-top: 1rem; width: 100%; }
+    
+    .hero-section { padding: 60px 0 50px; }
+    .hero-section h1 { font-size: 1.85rem; line-height: 1.35; margin-bottom: 1.25rem; }
+    .hero-section .lead { font-size: 1rem; margin-bottom: 1.5rem; }
+    .hero-section .btn-lg { padding: 0.75rem 1.25rem; font-size: 0.95rem; width: 100%; margin-bottom: 0.75rem; }
+    .hero-section .d-flex.gap-3 { flex-direction: column; gap: 0.75rem; }
+    .hero-section .trust-badge { margin-top: 1.5rem; padding: 1rem 1.25rem; flex-wrap: wrap; justify-content: center; }
+    
+    .section-title { font-size: 2rem; }
+    .section-subtitle { font-size: 1rem; }
+    .stats-section, .services-section, .process-section, .cta-section, .contact-section, .problem-section, .faq-section { padding: 60px 0; }
+    .service-card, .process-card, .contact-card, .stat-card { margin-bottom: 2rem; }
+    .process-connector { display: none; }
+    .cta-box { padding: 2.5rem 1.5rem; }
+    .cta-box h2 { font-size: 1.75rem; }
+    .footer { text-align: center; }
+    .footer .col-lg-4, .footer .col-lg-2, .footer .col-lg-3 { margin-bottom: 2rem; }
+}
+
+/* Portrait phones */
+@media (max-width: 576px) {
+    .container { padding-left: 15px; padding-right: 15px; }
+    body { font-size: 0.95rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.3rem; }
+    h4 { font-size: 1.15rem; }
+    
+    .navbar-brand { font-size: 1.4rem; }
+    .hero-section { padding: 50px 0 40px; }
+    .hero-section h1 { font-size: 1.65rem; line-height: 1.4; }
+    .hero-section .lead { font-size: 0.95rem; }
+    .hero-section .btn-lg { padding: 0.7rem 1rem; font-size: 0.9rem; }
+    .hero-section .trust-badge { flex-direction: column; gap: 0.5rem; padding: 0.875rem 1rem; }
+    
+    .section-title { font-size: 1.75rem; }
+    .btn-primary-custom, .btn-outline-custom, .btn-white-custom { width: 100%; padding: 0.75rem 1rem; }
+    .d-flex.gap-3.flex-wrap { flex-direction: column !important; gap: 1rem !important; }
+    
+    .stat-card { padding: 1.5rem; }
+    .stat-card h3 { font-size: 2rem; }
+    .service-card { padding: 1.5rem; }
+    .service-icon { width: 70px; height: 70px; font-size: 1.75rem; }
+    .process-card { padding: 1.5rem; }
+    .contact-card { padding: 1.5rem; }
+    .cta-box { padding: 2rem 1.25rem; text-align: center; }
+    .cta-box h2 { font-size: 1.5rem; }
+    
+    .stats-section, .services-section, .process-section, .cta-section, .contact-section, .problem-section, .faq-section { padding: 40px 0; }
+}
+
+@media (max-width: 400px) {
+    .hero-section h1 { font-size: 1.5rem; }
+    .hero-section .lead { font-size: 0.9rem; }
+}
+    
+
+/* WhatsApp Floating Widget */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    animation: pulse-whatsapp 2s infinite;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+    box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+    color: #FFF;
+}
+
+@keyframes pulse-whatsapp {
+    0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
+    50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7); }
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 90px;
+        right: 20px;
+        font-size: 25px;
+    }
+}
+    
     </style>
 </head>
 <body>
@@ -986,7 +1051,7 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <a class="btn btn-primary-custom" href="https://calendly.com/chiomanwabuezee/30min" target="_blank">Book Free Demo</a>
+                        <a class="btn btn-primary-custom" href="https://calendly.com/chiomanwabuezee/30min" target="_blank">Book a Call</a>
                     </li>
                 </ul>
             </div>
@@ -1002,22 +1067,13 @@
                     <p class="lead">We are a marketing agency that helps businesses communicate clearly, attract the right customers, and grow with structure - not guesswork.</p>
                     <div class="d-flex gap-3 flex-wrap">
                         <a href="https://calendly.com/chiomanwabuezee/30min" target="_blank" class="btn btn-primary-custom btn-lg">
-                            <i class="fas fa-calendar-check me-2"></i>Book Free Demo Call
+                            <i class="fas fa-calendar-check me-2"></i>Book a Discovery Call
                         </a>
-                        <a href="#services" class="btn btn-outline-custom btn-lg" style="background: rgba(255,255,255,0.1); color: white; border-color: rgba(255,255,255,0.3);">
+                        <a href="#services" class="btn btn-outline-custom btn-lg" style="background: rgba(165, 121, 9, 0.69); color: white; border-color: rgba(255,255,255,0.3);">
                             <i class="fas fa-arrow-down me-2"></i>Explore Services
                         </a>
                     </div>
-                    <div class="trust-badge">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <span>Trusted by 25+ Businesses</span>
-                    </div>
+                    
                 </div>
                 <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left">
                     <div class="hero-image text-center position-relative">
@@ -1698,7 +1754,7 @@
     </div>
 
     <!-- WhatsApp Floating Widget -->
-    <a href="https://wa.me/2348029073497?text=Hello%20Inladge!%20I%27m%20interested%20in%20your%20marketing%20services." class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp">
+    <a href="https://wa.me/2348029073497?text=Hello%20Inladge!%20I'm%20interested%20in%20your%20marketing%20services." class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -1774,7 +1830,7 @@
         });
 
         // Add hover effect to service cards
-        document.querySelectorAll('.service-card').forEach(card => {
+        document.querySelectors('.service-card').forEach(card => {
             card.addEventListener('mouseenter', function() {
                 this.style.transform = 'translateY(-10px)';
             });
@@ -1789,12 +1845,10 @@
                 const answer = this.nextElementSibling;
                 const isOpen = answer.style.maxHeight;
                 
-                // Close all answers
                 document.querySelectorAll('.faq-answer').forEach(ans => {
                     ans.style.maxHeight = null;
                 });
                 
-                // Toggle current answer
                 if (!isOpen) {
                     answer.style.maxHeight = answer.scrollHeight + 'px';
                 }
