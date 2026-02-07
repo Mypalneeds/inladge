@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Inladge Marketing Agency - Professional digital marketing services, brand strategy, lead generation, and business growth solutions. Trusted by 25+ businesses to create clear marketing that converts.">
     <meta name="keywords" content="marketing agency, digital marketing services, brand strategy, lead generation, website content writing, paid ads management, email marketing, business growth, marketing consultant, professional marketing services, brand messaging, content marketing">
     <meta name="author" content="Inladge Marketing Agency">
     <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#0066FF">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta property="og:title" content="Inladge - Professional Marketing Agency for Business Growth">
     <meta property="og:description" content="We help businesses communicate clearly, attract the right customers, and grow with structure. Trusted by 25+ businesses.">
     <meta property="og:type" content="website">
@@ -26,19 +23,15 @@
     
     <style>
         :root {
-            --primary-blue: #0066FF;
-            --dark-navy: #0A1628;
-            --burnt-orange: #E85D04;
-            --light-grey: #F8F9FA;
-            --medium-grey: #6C757D;
+            --primary-blue: #7192A1;
+            --dark-navy: #042842;
+            --burnt-orange: #186667;
+            --light-grey: #EADFCB;
+            --medium-grey: #C08E66;
             --white: #FFFFFF;
-            --gradient-blue: linear-gradient(135deg, #0066FF 0%, #0052CC 100%);
-            --gradient-dark: linear-gradient(135deg, #0A1628 0%, #1a2942 100%);
-            --gradient-orange: linear-gradient(135deg, #E85D04 0%, #DC2F02 100%);
-        }
-        
-        a {
-            cursor: pointer;
+            --gradient-blue: linear-gradient(135deg, #7192A1 0%, #5a7a8a 100%);
+            --gradient-dark: linear-gradient(135deg, #042842 0%, #0a3d5c 100%);
+            --gradient-orange: linear-gradient(135deg, #186667 0%, #145051 100%);
         }
         
         * {
@@ -52,7 +45,6 @@
             color: var(--dark-navy);
             line-height: 1.7;
             overflow-x: hidden;
-            padding-top: 76px;
         }
         
         h1, h2, h3, h4, h5, h6 {
@@ -67,11 +59,6 @@
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
             padding: 1rem 0;
             transition: all 0.3s ease;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1050;
         }
         
         .navbar.scrolled {
@@ -93,19 +80,6 @@
         
         .navbar-brand:hover span {
             color: var(--primary-blue);
-        }
-        
-        .navbar-toggler {
-            border: 2px solid var(--burnt-orange);
-            padding: 0.5rem 0.75rem;
-        }
-        
-        .navbar-toggler:focus {
-            box-shadow: 0 0 0 0.2rem rgba(232, 93, 4, 0.25);
-        }
-        
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23E85D04' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
         
         .nav-link {
@@ -132,20 +106,13 @@
             border-radius: 50px;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
-            min-height: 48px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(113, 146, 161, 0.3);
         }
         
         .btn-primary-custom:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 25px rgba(0, 102, 255, 0.4);
+            box-shadow: 0 6px 25px rgba(113, 146, 161, 0.4);
             color: var(--white);
-            text-decoration: none;
         }
         
         .btn-outline-custom {
@@ -156,25 +123,18 @@
             font-weight: 600;
             transition: all 0.3s ease;
             background: transparent;
-            min-height: 48px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            cursor: pointer;
         }
         
         .btn-outline-custom:hover {
             background: var(--primary-blue);
             color: var(--white);
             transform: translateY(-2px);
-            text-decoration: none;
         }
         
         /* Hero Section */
         .hero-section {
             background: var(--gradient-dark);
-            padding: 80px 0 100px;
+            padding: 120px 0 100px;
             position: relative;
             overflow: hidden;
         }
@@ -186,7 +146,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230066FF' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%237192A1' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
             opacity: 0.4;
         }
         
@@ -446,7 +406,7 @@
             font-size: 1.75rem;
             font-weight: 800;
             color: var(--white);
-            box-shadow: 0 10px 30px rgba(0, 102, 255, 0.4);
+            box-shadow: 0 10px 30px rgba(113, 146, 161, 0.4);
             position: relative;
             z-index: 2;
         }
@@ -467,7 +427,7 @@
             left: 50%;
             width: 100%;
             height: 3px;
-            background: rgba(0, 102, 255, 0.3);
+            background: rgba(113, 146, 161, 0.3);
             z-index: 1;
         }
         
@@ -482,7 +442,7 @@
             border-radius: 30px;
             padding: 4rem 3rem;
             text-align: center;
-            box-shadow: 0 20px 60px rgba(0, 102, 255, 0.3);
+            box-shadow: 0 20px 60px rgba(113, 146, 161, 0.3);
             position: relative;
             overflow: hidden;
         }
@@ -525,19 +485,12 @@
             font-size: 1.1rem;
             transition: all 0.3s ease;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            min-height: 48px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            cursor: pointer;
         }
         
         .btn-white-custom:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
             color: var(--primary-blue);
-            text-decoration: none;
         }
         
         /* Contact Section */
@@ -663,245 +616,30 @@
         }
         
         /* Responsive */
-        @media (max-width: 991px) {
-            .navbar-collapse {
-                background: white;
-                padding: 1.5rem;
-                border-radius: 15px;
-                margin-top: 1rem;
-                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            }
-            
-            .nav-link {
-                margin: 0.5rem 0;
-                padding: 0.5rem 0;
-            }
-            
-            .navbar .btn-primary-custom {
-                width: 100%;
-                margin-top: 1rem;
-            }
-        }
-        
         @media (max-width: 768px) {
-            .hero-section {
-                padding: 60px 0 60px;
-            }
-            
             .hero-section h1 {
-                font-size: 2rem;
-                line-height: 1.2;
-            }
-            
-            .hero-section .lead {
-                font-size: 1.1rem;
+                font-size: 2.25rem;
             }
             
             .section-title {
-                font-size: 1.75rem;
-            }
-            
-            .section-subtitle {
-                font-size: 1rem;
+                font-size: 2rem;
             }
             
             .process-connector {
                 display: none;
             }
             
-            .stats-section {
-                padding: 40px 0;
-                margin-top: -30px;
+            .hero-section {
+                padding: 80px 0 60px;
             }
             
+            .stats-section,
             .services-section,
             .process-section,
             .cta-section,
             .contact-section,
-            .problem-section,
-            .portfolio-section,
-            .testimonial-section,
-            .faq-section {
+            .problem-section {
                 padding: 60px 0;
-            }
-            
-            .stat-card {
-                margin-bottom: 1rem;
-            }
-            
-            .service-card {
-                padding: 2rem 1.5rem;
-            }
-            
-            .cta-box {
-                padding: 3rem 2rem;
-            }
-            
-            .cta-box h2 {
-                font-size: 1.75rem;
-            }
-            
-            .trust-badge {
-                padding: 0.75rem 1.5rem;
-                font-size: 0.9rem;
-            }
-            
-            .btn-primary-custom,
-            .btn-outline-custom,
-            .btn-orange-custom,
-            .btn-white-custom {
-                width: 100%;
-                margin-bottom: 0.75rem;
-                text-align: center;
-            }
-            
-            .d-flex.gap-3 {
-                gap: 0 !important;
-            }
-            
-            .hero-section .d-flex {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            .cta-section .d-flex {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            .problem-card {
-                padding: 1.5rem;
-                margin-bottom: 1rem;
-                font-size: 0.95rem;
-            }
-            
-            .problem-card i {
-                font-size: 1.25rem;
-            }
-            
-            .portfolio-item {
-                height: 250px;
-            }
-            
-            .testimonial-card {
-                margin-bottom: 1.5rem;
-            }
-            
-            .orange-badge {
-                font-size: 0.9rem;
-                padding: 0.4rem 1.2rem;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero-section {
-                padding: 50px 0 50px;
-            }
-            
-            .hero-section h1 {
-                font-size: 1.75rem;
-            }
-            
-            .section-title {
-                font-size: 1.5rem;
-            }
-            
-            .navbar-brand {
-                font-size: 1.5rem;
-            }
-            
-            .stat-card h3 {
-                font-size: 2rem;
-            }
-            
-            .service-card h3 {
-                font-size: 1.25rem;
-            }
-            
-            .step-number {
-                width: 60px;
-                height: 60px;
-                font-size: 1.5rem;
-            }
-            
-            .process-step h4 {
-                font-size: 1.1rem;
-            }
-            
-            .cta-box h2 {
-                font-size: 1.5rem;
-            }
-            
-            .cta-box p {
-                font-size: 1rem;
-            }
-            
-            .contact-card {
-                padding: 2rem 1.5rem;
-                margin-bottom: 1.5rem;
-            }
-            
-            .faq-section .alert {
-                text-align: center;
-                font-size: 0.9rem;
-            }
-            
-            .contact-section .alert {
-                padding: 1rem;
-                font-size: 0.9rem;
-            }
-            
-            .testimonial-avatar {
-                width: 60px;
-                height: 60px;
-                font-size: 1.5rem;
-            }
-            
-            .testimonial-text {
-                font-size: 1rem;
-            }
-            
-            .accordion-button {
-                font-size: 1rem;
-                padding: 1rem;
-            }
-            
-            .portfolio-item {
-                height: 200px;
-                margin-bottom: 20px;
-            }
-            
-            .footer {
-                padding: 40px 0 20px;
-            }
-            
-            .footer .col-lg-4,
-            .footer .col-lg-2,
-            .footer .col-lg-3,
-            .footer .col-md-6 {
-                margin-bottom: 2rem;
-            }
-            
-            .social-links {
-                text-align: center;
-                margin-top: 1rem;
-            }
-        }
-        
-        /* Additional mobile optimizations */
-        @media (max-width: 480px) {
-            .btn-white-custom,
-            .btn-orange-custom {
-                padding: 0.875rem 2rem;
-                font-size: 1rem;
-            }
-            
-            .service-features {
-                font-size: 0.9rem;
-            }
-            
-            .stat-card {
-                padding: 1.5rem;
             }
         }
         
@@ -1102,19 +840,12 @@
             font-weight: 600;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(232, 93, 4, 0.4);
-            min-height: 48px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            cursor: pointer;
         }
         
         .btn-orange-custom:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 25px rgba(232, 93, 4, 0.5);
             color: var(--white);
-            text-decoration: none;
         }
         
         /* Portfolio/Gallery Section */
@@ -1169,6 +900,67 @@
         .portfolio-item:hover .portfolio-overlay p {
             transform: translateY(0);
         }
+        
+        /* WhatsApp Floating Widget */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+            color: #FFF;
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7);
+            }
+            100% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            }
+        }
+
+        .whatsapp-float i {
+            margin: 0;
+            line-height: 60px;
+        }
+
+        /* Responsive WhatsApp button */
+        @media screen and (max-width: 767px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 25px;
+            }
+            
+            .whatsapp-float i {
+                line-height: 50px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -1194,7 +986,7 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <a class="btn btn-primary-custom" href="https://calendly.com/inladgecompany" target="_blank">Book a Call</a>
+                        <a class="btn btn-primary-custom" href="https://calendly.com/chiomanwabuezee/30min" target="_blank">Book Free Demo</a>
                     </li>
                 </ul>
             </div>
@@ -1209,8 +1001,8 @@
                     <h1>We Help Businesses Look Professional and Get More Customers</h1>
                     <p class="lead">We are a marketing agency that helps businesses communicate clearly, attract the right customers, and grow with structure - not guesswork.</p>
                     <div class="d-flex gap-3 flex-wrap">
-                        <a href="https://calendly.com/inladgecompany" target="_blank" class="btn btn-primary-custom btn-lg">
-                            <i class="fas fa-calendar-check me-2"></i>Book a Discovery Call
+                        <a href="https://calendly.com/chiomanwabuezee/30min" target="_blank" class="btn btn-primary-custom btn-lg">
+                            <i class="fas fa-calendar-check me-2"></i>Book Free Demo Call
                         </a>
                         <a href="#services" class="btn btn-outline-custom btn-lg" style="background: rgba(255,255,255,0.1); color: white; border-color: rgba(255,255,255,0.3);">
                             <i class="fas fa-arrow-down me-2"></i>Explore Services
@@ -1236,19 +1028,19 @@
                             
                             <!-- Rocket icon -->
                             <g transform="translate(200, 150)">
-                                <path d="M50,0 L70,20 L70,80 L50,100 L30,80 L30,20 Z" fill="#E85D04"/>
+                                <path d="M50,0 L70,20 L70,80 L50,100 L30,80 L30,20 Z" fill="#186667"/>
                                 <circle cx="50" cy="40" r="8" fill="white"/>
-                                <path d="M35,100 L25,120 L35,115 Z" fill="#0066FF"/>
-                                <path d="M65,100 L75,120 L65,115 Z" fill="#0066FF"/>
-                                <path d="M40,100 L35,130 L40,120 Z" fill="#E85D04" opacity="0.7"/>
-                                <path d="M60,100 L65,130 L60,120 Z" fill="#E85D04" opacity="0.7"/>
+                                <path d="M35,100 L25,120 L35,115 Z" fill="#7192A1"/>
+                                <path d="M65,100 L75,120 L65,115 Z" fill="#7192A1"/>
+                                <path d="M40,100 L35,130 L40,120 Z" fill="#186667" opacity="0.7"/>
+                                <path d="M60,100 L65,130 L60,120 Z" fill="#186667" opacity="0.7"/>
                             </g>
                             
                             <!-- Decorative elements -->
-                            <circle cx="150" cy="150" r="15" fill="#E85D04" opacity="0.6"/>
-                            <circle cx="350" cy="200" r="20" fill="#0066FF" opacity="0.4"/>
-                            <circle cx="120" cy="300" r="10" fill="#E85D04" opacity="0.5"/>
-                            <circle cx="380" cy="320" r="12" fill="#0066FF" opacity="0.3"/>
+                            <circle cx="150" cy="150" r="15" fill="#186667" opacity="0.6"/>
+                            <circle cx="350" cy="200" r="20" fill="#7192A1" opacity="0.4"/>
+                            <circle cx="120" cy="300" r="10" fill="#186667" opacity="0.5"/>
+                            <circle cx="380" cy="320" r="12" fill="#7192A1" opacity="0.3"/>
                             
                             <!-- Stars -->
                             <path d="M100,100 L102,106 L108,106 L103,110 L105,116 L100,112 L95,116 L97,110 L92,106 L98,106 Z" fill="#FFB800"/>
@@ -1323,7 +1115,7 @@
                         <!-- Business growth illustration -->
                         <svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 500px;">
                             <!-- Background -->
-                            <rect width="500" height="400" fill="#F8F9FA" rx="20"/>
+                            <rect width="500" height="400" fill="#EADFCB" rx="20"/>
                             
                             <!-- Graph background -->
                             <rect x="50" y="50" width="400" height="300" fill="white" rx="10"/>
@@ -1337,24 +1129,24 @@
                             
                             <!-- Growth line -->
                             <polyline points="80,280 150,240 220,200 290,140 360,80 430,50" 
-                                      fill="none" stroke="#E85D04" stroke-width="4" stroke-linecap="round"/>
+                                      fill="none" stroke="#186667" stroke-width="4" stroke-linecap="round"/>
                             
                             <!-- Data points -->
-                            <circle cx="80" cy="280" r="6" fill="#E85D04"/>
-                            <circle cx="150" cy="240" r="6" fill="#E85D04"/>
-                            <circle cx="220" cy="200" r="6" fill="#E85D04"/>
-                            <circle cx="290" cy="140" r="6" fill="#E85D04"/>
-                            <circle cx="360" cy="80" r="6" fill="#E85D04"/>
-                            <circle cx="430" cy="50" r="8" fill="#0066FF"/>
+                            <circle cx="80" cy="280" r="6" fill="#186667"/>
+                            <circle cx="150" cy="240" r="6" fill="#186667"/>
+                            <circle cx="220" cy="200" r="6" fill="#186667"/>
+                            <circle cx="290" cy="140" r="6" fill="#186667"/>
+                            <circle cx="360" cy="80" r="6" fill="#186667"/>
+                            <circle cx="430" cy="50" r="8" fill="#7192A1"/>
                             
                             <!-- Success badge -->
-                            <rect x="340" y="15" width="130" height="40" fill="#0066FF" rx="20"/>
+                            <rect x="340" y="15" width="130" height="40" fill="#7192A1" rx="20"/>
                             <text x="405" y="40" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Success!</text>
                             
                             <!-- Icons -->
-                            <circle cx="100" cy="370" r="20" fill="#0066FF" opacity="0.2"/>
-                            <circle cx="250" cy="370" r="20" fill="#E85D04" opacity="0.2"/>
-                            <circle cx="400" cy="370" r="20" fill="#0066FF" opacity="0.2"/>
+                            <circle cx="100" cy="370" r="20" fill="#7192A1" opacity="0.2"/>
+                            <circle cx="250" cy="370" r="20" fill="#186667" opacity="0.2"/>
+                            <circle cx="400" cy="370" r="20" fill="#7192A1" opacity="0.2"/>
                         </svg>
                     </div>
                     
@@ -1378,7 +1170,7 @@
                                 <span><strong>Value results</strong> over quick tricks and shortcuts</span>
                             </li>
                         </ul>
-                        <div class="alert mt-4" role="alert" style="background: linear-gradient(135deg, #E85D04 0%, #DC2F02 100%); border: none; color: white;">
+                        <div class="alert mt-4" role="alert" style="background: linear-gradient(135deg, #186667 0%, #145051 100%); border: none; color: white;">
                             <i class="fas fa-info-circle me-2"></i>
                             <strong>Not a good fit?</strong> This may not work if you're looking for cheap services or quick fixes.
                         </div>
@@ -1537,7 +1329,7 @@
                     <div class="portfolio-item">
                         <!-- Marketing Strategy Illustration -->
                         <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
-                            <rect width="400" height="300" fill="#0066FF"/>
+                            <rect width="400" height="300" fill="#7192A1"/>
                             <circle cx="200" cy="150" r="80" fill="white" opacity="0.2"/>
                             <circle cx="200" cy="150" r="60" fill="white" opacity="0.3"/>
                             <circle cx="200" cy="150" r="40" fill="white" opacity="0.4"/>
@@ -1554,13 +1346,13 @@
                     <div class="portfolio-item">
                         <!-- Lead Generation Illustration -->
                         <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
-                            <rect width="400" height="300" fill="#E85D04"/>
+                            <rect width="400" height="300" fill="#186667"/>
                             <rect x="50" y="50" width="300" height="200" fill="white" opacity="0.2" rx="10"/>
                             <rect x="80" y="80" width="240" height="20" fill="white" opacity="0.4" rx="5"/>
                             <rect x="80" y="120" width="180" height="20" fill="white" opacity="0.4" rx="5"/>
                             <rect x="80" y="160" width="200" height="20" fill="white" opacity="0.4" rx="5"/>
                             <circle cx="320" cy="230" r="30" fill="white"/>
-                            <path d="M320,215 L320,245 M305,230 L335,230" stroke="#E85D04" stroke-width="4"/>
+                            <path d="M320,215 L320,245 M305,230 L335,230" stroke="#186667" stroke-width="4"/>
                         </svg>
                         <div class="portfolio-overlay">
                             <h4>Lead Generation</h4>
@@ -1573,7 +1365,7 @@
                     <div class="portfolio-item">
                         <!-- Content Marketing Illustration -->
                         <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
-                            <rect width="400" height="300" fill="#0A1628"/>
+                            <rect width="400" height="300" fill="#042842"/>
                             <rect x="80" y="60" width="240" height="180" fill="white" opacity="0.2" rx="10"/>
                             <circle cx="150" cy="120" r="30" fill="white" opacity="0.4"/>
                             <rect x="200" y="100" width="90" height="15" fill="white" opacity="0.4" rx="5"/>
@@ -1756,7 +1548,7 @@
                     
                     <div class="text-center mt-5" data-aos="fade-up">
                         <p class="text-muted mb-3">Still have questions?</p>
-                        <a href="https://calendly.com/inladgecompany" target="_blank" class="btn btn-orange-custom btn-lg">
+                        <a href="#contact" class="btn btn-orange-custom btn-lg">
                             <i class="fas fa-comments me-2"></i>Let's Talk
                         </a>
                     </div>
@@ -1774,10 +1566,10 @@
                         <h2>Ready to Improve Your Marketing and Business Growth?</h2>
                         <p>Book a discovery call and let's discuss how we can help your business grow</p>
                         <div class="d-flex gap-3 flex-wrap justify-content-lg-start justify-content-center">
-                            <a href="https://calendly.com/inladgecompany" target="_blank" class="btn btn-white-custom">
+                            <a href="https://calendly.com/chiomanwabuezee/30min" target="_blank" class="btn btn-white-custom">
                                 <i class="fas fa-calendar-check me-2"></i>Book Your Free Discovery Call
                             </a>
-                            <a href="tel:+2348029073497" class="btn btn-outline-custom" style="border-color: white; color: white; background: rgba(255,255,255,0.1);">
+                            <a href="tel:08029073497" class="btn btn-outline-custom" style="border-color: white; color: white;">
                                 <i class="fas fa-phone me-2"></i>Call Now
                             </a>
                         </div>
@@ -1811,7 +1603,7 @@
                             <i class="fas fa-phone"></i>
                         </div>
                         <h4>Call Us</h4>
-                        <a href="tel:+2348029073497">08029073497</a>
+                        <a href="tel:08029073497">08029073497</a>
                         <p class="mt-2 text-muted">Mon - Fri, 9am - 6pm</p>
                     </div>
                 </div>
@@ -1833,7 +1625,7 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <h4>Email Us</h4>
-                        <a href="/cdn-cgi/l/email-protection#c8a1a6a4a9acafadaba7a5b8a9a6b188afa5a9a1a4e6aba7a5"><span class="__cf_email__" data-cfemail="3f5651535e5b585a5c50524f5e51467f58525e5653115c5052">[email&#160;protected]</span></a>
+                        <a href="/cdn-cgi/l/email-protection#e1888f8d80858684828e8c91808f98a1868c80888dcf828e8c"><span class="__cf_email__" data-cfemail="1c7572707d787b797f73716c7d72655c7b717d7570327f7371">[email&#160;protected]</span></a>
                         <p class="mt-2 text-muted">24-hour response time</p>
                     </div>
                 </div>
@@ -1888,7 +1680,7 @@
                     <h5>Contact Info</h5>
                     <ul class="footer-links">
                         <li><i class="fas fa-phone me-2"></i> 08029073497</li>
-                        <li><i class="fas fa-envelope me-2"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="640d0a0805000301070b0914050a1d240309050d084a070b09">[email&#160;protected]</a></li>
+                        <li><i class="fas fa-envelope me-2"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="deb7b0b2bfbab9bbbdb1b3aebfb0a79eb9b3bfb7b2f0bdb1b3">[email&#160;protected]</a></li>
                         <li><i class="fab fa-whatsapp me-2"></i> WhatsApp Support</li>
                     </ul>
                 </div>
@@ -1904,6 +1696,11 @@
     <div class="scroll-top" id="scrollTop">
         <i class="fas fa-arrow-up"></i>
     </div>
+
+    <!-- WhatsApp Floating Widget -->
+    <a href="https://wa.me/2348029073497?text=Hello%20Inladge!%20I%27m%20interested%20in%20your%20marketing%20services." class="whatsapp-float" target="_blank" aria-label="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- Bootstrap JS -->
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -1942,7 +1739,7 @@
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    const offsetTop = target.offsetTop - 90; // Account for fixed navbar
+                    const offsetTop = target.offsetTop - 80;
                     window.scrollTo({
                         top: offsetTop,
                         behavior: 'smooth'
@@ -1977,4 +1774,32 @@
         });
 
         // Add hover effect to service cards
-        docu
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const isOpen = answer.style.maxHeight;
+                
+                // Close all answers
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.style.maxHeight = null;
+                });
+                
+                // Toggle current answer
+                if (!isOpen) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
